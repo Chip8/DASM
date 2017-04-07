@@ -1,7 +1,7 @@
 # libc8dasm
 Disassembler of chip-8 prog.
 
-##Usage
+## Usage
 ```C++
 //File named "UFO"
 std::string prog = ReadFile("UFO"); // This reads the file in binary mode and generates the HEX value string
