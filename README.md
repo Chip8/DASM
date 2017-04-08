@@ -1,6 +1,7 @@
 # libc8dasm
 Disassembler for chip-8 programs.
 
+Chip-8 Instructions table references to:[Cowgod's Chip-8 Technical Reference v1.0](http://devernay.free.fr/hacks/chip8/C8TECH10.HTM#3.1)
 ## Usage
 
 Simply include the header libc8dasm.hpp.
