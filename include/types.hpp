@@ -1,11 +1,11 @@
 /*Here are some self-named types,for my personal purpose*/
-typedef unsigned char byte;
+typedef char byte;
 typedef uint16_t PLine;  // A Program line in hex.E.G. 00EE
 typedef uint8_t BIT8;    // 8BIT data
 typedef uint16_t BIT16;  // 16BIT data
 
 /*Chip-8 Instructions*/
-enum Instructions {
+enum C8Ins {
   // A - Address | R - 8-bit Registers | I - The 16-bit register I | K - 8-bit
   // value | N - 4-bit value
   // V0 ~ VF stands for the especial register

@@ -27,3 +27,13 @@
 *.exe
 *.out
 *.app
+
+#The annoying VS
+*.sln
+*.VC.db
+*.vcproj
+*.vcproj.filters
+*.obj
+*.pdb
+*.log
+*.tlog
