@@ -31,9 +31,11 @@
 #The annoying VS
 *.sln
 *.VC.db
-*.vcproj
-*.vcproj.filters
+*.vcxproj
+*.vcxproj.filters
 *.obj
 *.pdb
 *.log
 *.tlog
+*.suo
+*.idb
