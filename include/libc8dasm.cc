@@ -1,4 +1,4 @@
-#include "../include/libc8dasm.hpp"
+#include "../libc8dasm.hpp"
 #include <iomanip>
 #include <iterator>
 #include <sstream>
@@ -20,7 +20,7 @@ std::string libc8ReadFile(const char* c8ProgramFile) {
 
 /* Split the raw program string into a 4-hex-num based vector*/
 std::vector<std::string> libc8SplitLine(const std::string& c8RawString,
-                                        int HexLength) {
+                                        int HexLength = 4) {
   int NumPLine =
       c8RawString.length() / HexLength;  // The number of Program Line
   std::vector<std::string> c8ASM;  // Yes,it's for produce the asm source code.
