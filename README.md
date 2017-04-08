@@ -18,8 +18,11 @@ libc8DASM(Raw,Output);
 ofstream OutFile("OUT.asm");
 for(auto x : Output)
 	OutFile << x << std::endl; //outputs to file
+```
 
-/*Contents of OUT.asm:
+
+Contents of OUT.asm would be:
+```asm
 LD I, 02CD
 LD V9, 38
 LD VA, 08
