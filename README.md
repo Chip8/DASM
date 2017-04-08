@@ -27,5 +27,4 @@ LD I, 02CD
 LD V9, 38
 LD VA, 08
 DRW V9, VA, 3
-*/
 ```
