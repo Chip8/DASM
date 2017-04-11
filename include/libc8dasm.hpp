@@ -7,7 +7,7 @@
 #include "./types.hpp"
 
 /*Read programe file and store it into a char array in hex*/
-std::string libc8ReadFile(const char* c8ProgramFile) {
+inline std::string libc8ReadFile(const char* c8ProgramFile) {
   // Since the Chip-8 program usually won't be greater than 1KB,so I choose
   // string for temperary storage just in mind.
   std::ifstream c8Prog(c8ProgramFile, std::ios::binary);
@@ -22,8 +22,8 @@ std::string libc8ReadFile(const char* c8ProgramFile) {
 }
 
 /* Split the raw program string into a 4-hex-num based vector*/
-std::vector<std::string> libc8SplitLine(const std::string& c8RawString,
-                                        int HexLength = 4) {
+inline std::vector<std::string> libc8SplitLine(const std::string& c8RawString,
+                                               int HexLength = 4) {
   int NumPLine =
       c8RawString.length() / HexLength;  // The number of Program Line
   std::vector<std::string> c8ASM;  // Yes,it's for produce the asm source code.
@@ -40,7 +40,7 @@ std::vector<std::string> libc8SplitLine(const std::string& c8RawString,
 }
 
 /*Check if the program is correct*/
-bool libc8CheckCorrect(std::vector<std::string> c8RawString) {
+inline bool libc8CheckCorrect(std::vector<std::string> c8RawString) {
   if (c8RawString.empty()) return false;
   for (auto x : c8RawString) {
     std::stringstream c8RawStream;
